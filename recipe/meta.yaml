@@ -10,7 +10,7 @@ source:
   sha256: 703409204c0cdc7eb1f5e71c722a334ea37b41866d063bacaab3e63b159e8589
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
@@ -24,11 +24,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - numpy
   run:
-    - python
+    - python >=3.6
     - bokeh
     - numpy
     - scipy >=0.18
