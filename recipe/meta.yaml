@@ -24,11 +24,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - numpy
   run:
-    - python
+    - python >=3.6
     - bokeh
     - numpy
     - scipy >=0.18
